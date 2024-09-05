@@ -20,7 +20,7 @@ $(document).ready(function () {
     if ($(this).scrollTop() < 20) {
       $("#modePrefBtn").fadeIn();
     } else {
-      $("#modePrefBtn").fadeOut();
+      $("#modePrefBtn").hide();
     }
   });
 

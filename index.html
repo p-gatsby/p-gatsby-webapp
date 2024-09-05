@@ -16,6 +16,12 @@
     </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="I'm a Software Engineer based in Los Angeles, CA, with a strong
+      background in research, machine learning, and full-stack
+      development."
+    />
     <title>Peter Gatsby</title>
 
     <link rel="stylesheet" href="./index.css" />
@@ -37,10 +43,23 @@
     />
 
     <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/images/global-network/apple-touch-icon.png"
+    />
+    <link
       rel="icon"
       type="image/png"
-      href="./assets/images/global-network.png"
+      sizes="32x32"
+      href="assets/images/global-network//favicon-32x32.png"
     />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/images/global-network//favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/images/global-network/site.webmanifest" />
   </head>
 
   <body>
@@ -77,11 +96,13 @@
           <div class="col-lg-8 text-center text-lg-start pb-5">
             <h1 class="display-1">
               <span id="header"></span
-              ><span class="blink" id="header-blinker">|</span>
+              ><span class="blink" id="header-blinker">_</span>
             </h1>
             <p class="lead pl-2">
-              <span id="subheader"></span
-              ><span class="blink" id="subheader-blinker">|</span>
+              <span id="subheader"
+                >Computer Science Master's Graduate - Actively Seeking
+                Opportunities</span
+              >
             </p>
           </div>
           <div class="col-lg-4 text-center my-auto pb-5 rounded-circle">
@@ -126,9 +147,14 @@
                 communicate effective solutions, and drive innovative projects
                 to successful outcomes.
               </p>
+
+              <strong
+                >View my portfolio
+                <a href="https://github.com/p-gatsby">here</a></strong
+              >
             </div>
           </div>
-          <div class="col-lg-6 wrap mt-lg-0 mt-3">
+          <div class="col-lg-6 wrap mt-lg-0 mt-3 d-none d-lg-block">
             <div class="row flex-column">
               <div class="col-md-8">
                 <h2>My Skills</h2>
@@ -183,7 +209,7 @@
         </div>
       </div>
 
-      <div id="interests">
+      <div id="interests" class="d-none d-lg-block">
         <h1 class="display-4">Tech I'm familiar with</h1>
         <h1 class="bold-text bg-text">Tech Stack</h1>
 
@@ -263,6 +289,39 @@
             </h4>
 
             <div class="mt-3">
+              <div class="py-4">
+                <div class="desc">
+                  <h4>IT Instructor</h4>
+                  <p>
+                    ABCO Technology – Information Technology Training
+                    Institution
+                  </p>
+                </div>
+                <div>
+                  <p>2024 — PRESENT</p>
+                </div>
+                <div>
+                  <ul>
+                    <li>
+                      Collaborated with the department to design and develop new
+                      curricula in machine learning and data science, enhancing
+                      the program offerings to meet emerging industry demands.
+                    </li>
+                    <li>
+                      Implemented assessment tools and techniques to evaluate
+                      student progress, providing detailed feedback and tailored
+                      support to enhance learning outcomes.
+                    </li>
+                  </ul>
+                  <strong>Courses: </strong> Android Mobile App Development,
+                  Programming w/ Java, Introduction to Programming w/ Python,
+                  Introduction to Web Development (HTML, JS & CSS)
+                  <br />
+                  More info
+                  <a href="https://abcotechnology.edu/">here</a>
+                </div>
+              </div>
+
               <div class="py-4">
                 <div class="desc">
                   <h4>Research Assistant</h4>
@@ -360,7 +419,7 @@
                       and applying key accessibility design principles.
                     </li>
                     <li>
-                      Employed Agile methodologies for website development,
+                      Employed agile methodologies for website development,
                       implementing a MERN stack-based architecture, optimizing
                       code, and integrating essential plugins.
                     </li>
@@ -386,25 +445,27 @@
       <div id="education">
         <h1 class="display-4">Education</h1>
         <h1 class="bold-text bg-text">Academics</h1>
-        <div class="py-4">
-          <div class="desc">
-            <h4>Master's Degree in Computer Science</h4>
-            <p>CSU Long Beach</p>
+        <div class="row">
+          <div class="col-lg-6 py-4">
+            <div class="desc">
+              <h4>Master's Degree in Computer Science</h4>
+              <p>CSU Long Beach</p>
+            </div>
+            <div>
+              <p>2021 - 2023</p>
+              <a href="assets/pdfs/Gatsby_Peter_eDiploma-MSCS.pdf">eDiploma</a>
+            </div>
           </div>
-          <div>
-            <p>2021 - 2023</p>
-            <a href="assets/pdfs/Gatsby_Peter_eDiploma-MSCS.pdf">eDiploma</a>
-          </div>
-        </div>
 
-        <div class="py-4">
-          <div class="desc">
-            <h4>Bachelor's Degree in Computer Science</h4>
-            <p>CSU Los Angeles</p>
-          </div>
-          <div>
-            <p>2016 - 2021</p>
-            <a href="assets/pdfs/Gatsby_Peter_eDiploma-BSCS.pdf">eDiploma</a>
+          <div class="col-lg-6 py-4">
+            <div class="desc">
+              <h4>Bachelor's Degree in Computer Science</h4>
+              <p>CSU Los Angeles</p>
+            </div>
+            <div>
+              <p>2016 - 2021</p>
+              <a href="assets/pdfs/Gatsby_Peter_eDiploma-BSCS.pdf">eDiploma</a>
+            </div>
           </div>
         </div>
       </div>

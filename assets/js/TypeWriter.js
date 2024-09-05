@@ -1,13 +1,10 @@
 let i = 0;
 const header = "Peter Gatsby";
-const subheader =
-  "Computer Science Master's Graduate - Actively Seeking Opportunities";
 let speed = 150;
 
 const $headerElement = $("#header");
 const $subheaderElement = $("#subheader");
 const $headerBlinker = $("#header-blinker");
-const $subheaderBlinker = $("#subheader-blinker");
 
 const isMobile = () => {
   return window.matchMedia("(max-width: 992px)").matches;
@@ -26,20 +23,14 @@ const typeText = ($element, text, callback) => {
 const type = () => {
   $headerBlinker.show();
   typeText($headerElement, header, () => {
-    i = 0;
-    speed = 100;
-    $headerBlinker.remove();
-    $subheaderBlinker.show();
-    typeText($subheaderElement, subheader);
+    $subheaderElement.fadeIn(3000);
   });
 };
-
 $(document).ready(function () {
   if (isMobile()) {
     $headerElement.html(header);
-    $subheaderElement.html(subheader);
+    $subheaderElement.show();
     $headerBlinker.remove();
-    $subheaderBlinker.remove();
   } else {
     type();
   }
