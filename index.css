@@ -32,6 +32,10 @@ body {
   margin: 0 0;
 }
 
+#subheader {
+  display: none;
+}
+
 .about-text p a {
   color: inherit;
 }
