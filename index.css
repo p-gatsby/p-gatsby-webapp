@@ -32,6 +32,10 @@ body {
   margin: 0 0;
 }
 
+#subheader {
+  display: none;
+}
+
 .about-text p a {
   color: inherit;
 }
@@ -112,24 +116,27 @@ h6 {
   color: #007bff;
   transition: all 0.3s;
 }
+
 .link:hover {
   text-decoration: none;
   color: #111;
   transition: all 0.3s;
 }
+
 .social-links li {
   list-style: none;
   display: inline-block;
 }
-.social-links li a {
+
+.social-links a {
   height: 50px;
   width: 50px;
   display: block;
   float: left;
-  background: rgba(255, 255, 255, 0.05);
   border-radius: 50%;
   position: relative;
 }
+
 .social-links li a ion-icon {
   position: absolute;
   font-size: 26px;
@@ -140,8 +147,14 @@ h6 {
   transform: translate(-50%, -50%);
   transition: all 0.3s;
 }
-.social-links li a:hover {
+
+.social-links.links-light li a:hover {
   color: #111;
+  transition: all 0.3s;
+}
+
+.social-links.links-dark li a:hover {
+  color: #fff;
   transition: all 0.3s;
 }
 
@@ -214,7 +227,7 @@ h6 {
 }
 
 .icon-box:hover {
-  background: rgba(122, 122, 122, 0.12);
+  background-color: rgba(122, 122, 122, 0.12);
 }
 
 .icon-box-dark {
@@ -243,6 +256,10 @@ h6 {
 
 .bg-text-dark {
   color: rgba(255, 255, 255, 0.08) !important;
+}
+
+.ion-icon-dark:hover {
+  color: #f0f0f0 !important;
 }
 
 @media (min-width: 992px) {

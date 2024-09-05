@@ -20,7 +20,7 @@ $(document).ready(function () {
     if ($(this).scrollTop() < 20) {
       $("#modePrefBtn").fadeIn();
     } else {
-      $("#modePrefBtn").fadeOut();
+      $("#modePrefBtn").hide();
     }
   });
 
@@ -40,4 +40,6 @@ const changeModePref = () => {
   $(".wrap .about-desc .bold-text").toggleClass("bg-text-dark");
   $(".bg-text").toggleClass("bg-text-dark");
   $(".icon-box").toggleClass("icon-box-dark");
+  $(".social-links").toggleClass("links-dark");
+  $(".social-links").toggleClass("links-light");
 };
