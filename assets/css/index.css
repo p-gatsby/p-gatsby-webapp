@@ -1,0 +1,57 @@
+@font-face {
+  font-family: "VCR_OSD";
+  src: url("/assets/fonts/VCR_OSD_MONO_1.001.woff") format("woff");
+  src: url("/assets/fonts/VCR_OSD_MONO_1.001.ttf") format("truetype");
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #dedbd3;
+  font-family: "VCR_OSD";
+  color: rgba(0, 0, 0, 0.65);
+  text-transform: uppercase;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.navbar {
+  position: absolute;
+  background-color: #dedbd3;
+  width: calc(100% - 1.5rem);
+}
+
+.title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+}
+
+.title {
+  display: inline-block;
+  line-height: 1.5em;
+  height: 1.5em;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.vertical-center {
+  display: flex;
+  align-items: center;
+  min-height: calc(100% - 60px);
+  min-height: calc(100vh - 60px);
+}
+
+@media (max-width: 991px) {
+  .nav-link:hover {
+    background-color: rgba(0, 0, 0, 0.25);
+  }
+}
